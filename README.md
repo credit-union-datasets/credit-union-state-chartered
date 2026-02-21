@@ -59,6 +59,36 @@ Contains listings of state-chartered credit unions in the United States, sourced
 1. Download the "Florida Financial Institution Resource List" PDF from https://flofr.gov/divisions-offices/division-of-financial-institutions/credit-unions
 2. Extract credit union charter number, name, and website into [florida.csv](florida.csv)
 
+## Illinois
+
+- Data source: [NCUA Federally Insured Credit Union List](https://ncua.gov/analysis/credit-union-corporate-call-report-data) (filtered for Illinois state-chartered credit unions)
+- Data period: Q3 2025 (September 2025)
+- Credit unions: 137
+- File: [illinois.csv](illinois.csv)
+- Disclaimer: authors not affiliated with NCUA or IDFPR
+
+### Methodology
+
+1. Download the NCUA Federally Insured Credit Union List (Q3 2025) from https://www.ncua.gov/files/publications/analysis/federally-insured-credit-union-list-september-2025.zip
+2. Filter for Illinois (`State = IL`) and state-chartered (`Credit Union type = 2`)
+3. Extract credit union charter number, name, and city into [illinois.csv](illinois.csv)
+
+Note: The Illinois Department of Financial and Professional Regulation (IDFPR) does not currently publish a downloadable list of state-chartered credit unions, so the NCUA data was used as an alternative source.
+
+## North Carolina
+
+- Data source: [Credit Union Division, NC Department of Commerce](https://cud.nc.gov/)
+- Data period: December 31, 2024
+- Credit unions: 30 (29 natural person + 1 corporate)
+- File: [north_carolina.csv](north_carolina.csv)
+- Raw source: [NC-Credit-Union-Annual-Report-2024.pdf](NC-Credit-Union-Annual-Report-2024.pdf)
+- Disclaimer: authors not affiliated with NC Credit Union Division
+
+### Methodology
+
+1. Download the 2024 Annual Report PDF from https://cud.nc.gov/Portals/CUD/2024%20NC%20Credit%20Union%20Division%20Annual%20Report.pdf
+2. Extract credit union name, city, and phone number from the balance sheet pages into [north_carolina.csv](north_carolina.csv)
+
 ## See also
 
 - [NCUA Data for Federally Insured Credit Unions](https://github.com/credit-union-datasets/credit-union-ncua) - NCUA listing of federally insured credit unions

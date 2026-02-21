@@ -89,6 +89,63 @@ Note: The Illinois Department of Financial and Professional Regulation (IDFPR) d
 1. Download the 2024 Annual Report PDF from https://cud.nc.gov/Portals/CUD/2024%20NC%20Credit%20Union%20Division%20Annual%20Report.pdf
 2. Extract credit union name, city, and phone number from the balance sheet pages into [north_carolina.csv](north_carolina.csv)
 
+## Louisiana
+
+- Data source: [Office of Financial Institutions (OFI)](https://ofi.la.gov/depository/credit-unions/active-credit-unions/)
+- Data period: February 20, 2026
+- Credit unions: 25
+- File: [louisiana.csv](louisiana.csv)
+- Disclaimer: authors not affiliated with OFI
+
+### Methodology
+
+1. Scrape the list of active credit unions from https://ofi.la.gov/depository/credit-unions/active-credit-unions/
+2. Extract credit union name, city, and phone number into [louisiana.csv](louisiana.csv)
+
+## Maryland
+
+- Data source: [Office of the Commissioner of Financial Regulation, Maryland Department of Labor](https://labor.maryland.gov/finance/consumers/cusc.shtml)
+- Data period: September 19, 2025
+- Credit unions: 7
+- File: [maryland.csv](maryland.csv)
+- Disclaimer: authors not affiliated with Maryland Office of the Commissioner of Financial Regulation
+
+### Methodology
+
+1. Scrape the directory of chartered financial institutions from https://labor.maryland.gov/finance/consumers/frdirfininst.shtml
+2. Extract credit union name, city, and phone number into [maryland.csv](maryland.csv)
+
+## Oregon
+
+- Data source: [Division of Financial Regulation (DFR), Department of Consumer and Business Services](https://dfr.oregon.gov/financial/manage/pages/state-chartered-credit-unions.aspx)
+- Data period: February 2026
+- Credit unions: 20
+- File: [oregon.csv](oregon.csv)
+- Disclaimer: authors not affiliated with DFR
+
+### Methodology
+
+1. Scrape the list of state-chartered credit unions from https://dfr.oregon.gov/financial/manage/pages/state-chartered-credit-unions.aspx
+2. Extract credit union name, city, and phone number into [oregon.csv](oregon.csv)
+
+Note: Northwest Community Credit Union merged into TwinStar Credit Union (Washington-chartered) effective June 12, 2023 and is excluded from this dataset.
+
+## Wisconsin
+
+- Data source: [NCUA Federally Insured Credit Union List](https://ncua.gov/analysis/credit-union-corporate-call-report-data) (filtered for Wisconsin state-chartered credit unions)
+- Data period: Q3 2025 (September 2025)
+- Credit unions: 99
+- File: [wisconsin.csv](wisconsin.csv)
+- Disclaimer: authors not affiliated with NCUA or WI DFI
+
+### Methodology
+
+1. Download the NCUA Federally Insured Credit Union List (Q3 2025) from https://www.ncua.gov/files/publications/analysis/federally-insured-credit-union-list-september-2025.zip
+2. Filter for Wisconsin (`State = WI`) and state-chartered (`Credit Union type = 2`)
+3. Extract credit union charter number, name, and city into [wisconsin.csv](wisconsin.csv)
+
+Note: The Wisconsin Department of Financial Institutions publishes quarterly Credit Union Bulletins with aggregate financial data, but these do not include individual credit union listings, so the NCUA data was used as an alternative source.
+
 ## See also
 
 - [NCUA Data for Federally Insured Credit Unions](https://github.com/credit-union-datasets/credit-union-ncua) - NCUA listing of federally insured credit unions
